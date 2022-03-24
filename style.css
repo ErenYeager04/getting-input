@@ -1,0 +1,81 @@
+body, html{
+    height:100%;
+    margin:0;
+    font-size:16px;
+    font-family:"Lato", sans-serif;
+    font-weight:400;
+    line-height:1.8em;
+    color:#666;
+  }
+  
+  .pimg1, .pimg2, .pimg3{
+    position:relative;
+    opacity:0.70;
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+  
+    /*
+      fixed = parallax
+      scroll = normal
+    */
+    background-attachment:fixed;
+  }
+  
+  .pimg1{
+    background-image:url('https://www.chathamhouse.org/sites/default/files/styles/12_6_media_huge/public/2022-01/GettyImages-1366268799.jpg?h=46f402f5&itok=bqBhi3Aj');
+    min-height:100%;
+  }
+  
+  .pimg2{
+    background-image:url('https://d1ngglk168riv7.cloudfront.net/n/wp-content/uploads/2022/03/03173309/Russia-Ukraine-war-scaled.jpg');
+    min-height:400px;
+  }
+  
+  .pimg3{
+    background-image:url('https://www.economist.com/img/b/1280/720/90/sites/default/files/images/2022/01/articles/main/20220122_eup501.jpg');
+    min-height:400px;
+  }
+  
+  .section{
+    text-align:center;
+    padding:50px 80px;
+  }
+  
+  .section-light{
+    background-color:#f4f4f4;
+    color:#666;
+  }
+  
+  .section-dark{
+    background-color:#282e34;
+    color:#ddd;
+  }
+  
+  .ptext{
+    position:absolute;
+    top:50%;
+    width:100%;
+    text-align:center;
+    color:#000;
+    font-size:27px;
+    letter-spacing:8px;
+    text-transform:uppercase;
+  }
+  
+  .ptext .border{
+    background-color:#111;
+    color:#fff;
+    padding:20px;
+  }
+  
+  .ptext .border.trans{
+    background-color:transparent;
+  }
+  
+  @media(max-width:568px){
+    .pimg1, .pimg2, .pimg3{
+      background-attachment:scroll;
+    }
+  }
+  
