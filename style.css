@@ -1,3 +1,47 @@
-.img {
+.background-image {
+    background-image: url(https://www.theamplituhedron.com/projects/How-to-make-a-scroll-menu-with-random-star-background-in-HTML/Pictures/1.JPG);
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    display: block;
+    width: 1200px;
+    height: 2000px;
     
+   
+   
+  
+}
+.content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+p {
+    margin: 10px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #1287A8}
+
+.allh {
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgb(236, 236, 236);
+    padding: 20px;
+    text-align: center;
+}
+.img-right {
+    float: right;border-radius: 10px;height: 300px;margin: 3px;
+}
+.img-left {
+    float: left;border-radius: 10px;height: 300px; margin: 5px;
+}
+.img-shadow:hover {
+    box-shadow: 3px 3px 3px rgb(160, 160, 160);
 }
