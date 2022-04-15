@@ -5,17 +5,82 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>javascripttutorial</title>
-    
+    <style>
+        .name-div {
+            color: aliceblue;
+
+        }
+        .photo-div {
+            color: aliceblue;
+
+        }
+        .date-div {
+            color: aliceblue;
+
+        }
+        .box-1 {
+            border: 1px solid black;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            height: 500px;
+            width: 100px;
+            float: left;
+        }
+        .box-2 {
+            border: 1px solid black;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            height: 500px;
+            width: 200px;
+            float: left;
+        }
+        .box-3 {
+            border: 1px solid black;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            height: 500px;
+            width: 150px;
+            float: left;
+            
+        }
+        body {
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+    </style>
+    <script src="script.js"></script>
 </head>
 <body>
-  
- 
-    
-    <ul id="messages"></ul>
-    <input id="text" type="text">
-    <button id="btn">Send</button>
-    <script src="script.js"></script>
+    <div style="margin: 10px;" class="name-div">
+        <input id="input-name" type="text" placeholder="Your name">
+    </div>
+
+   
+    <div style="margin: 10px;" class="photo-div">
+        <input id="input-photo" type="file" onchange="previewFile()"><br>
+        <img src="" height="100" alt="Image preview...">
+    </div>
     
 
+    <div style="margin: 10px;" class="date-div">
+        <input id="input-date"  type="date" placeholder="Your birthday">
+    </div>
+    <div style="margin: 10px;" class="button-div">
+        <button id="button">Submit</button>
+    </div>
+    <span class="box-1">
+        <ul id="messages-1">Name:    </ul>
+    </span>
+    <span class="box-2">   
+        <ul id="messages-2">Photo:    </ul>
+    </span>
+    <span class="box-3">
+        <ul id="messages-3">Date:     </ul>
+    </span>
+    <script async src="script.js"></script>
 </body>
 </html>
