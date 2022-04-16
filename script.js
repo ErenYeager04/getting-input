@@ -9,16 +9,17 @@ var messages3 = document.getElementById('messages-3');
 button.addEventListener("click", function(){
   var newMessage1 = document.createElement("li");
   var newMessage2 = document.createElement("li");
-  var photo = document.createElement("img")
+  var photo = document.createElement("img");
   var newMessage3 = document.createElement("li");
   newMessage1.innerHTML = inputName.value;
   photo.setAttribute("style", "height: 30px; widht: 30px;");
+  inputPhoto.addEventListener("onchange", function(){
   var reader1 = new FileReader();
   reader1.addEventListener("onloadend", function(){
-    reader1.createObjectURL(inputPhoto);
+    reader1.readAsDataURL(inputPhoto);
     photo.src = reader1.result;
   });
-  
+})
   newMessage3.innerHTML = inputDate.value;
   messages1.appendChild(newMessage1);
   messages2.appendChild(newMessage2)
